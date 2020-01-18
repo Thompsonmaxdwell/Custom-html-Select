@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #aaa;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+li{
+    list-style-type: none;
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+main{
+    width:100%;
+    background-color: coral;
+    height: 100vh;
+    padding-top: 100px;
+  
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0 0;
+}
+.selected__opt_result{
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid grey;
+    position: relative;
+}
+
+
+.chevron{
+    position: relative;
+    right: 10px;
+}
+.fa-chevron-up{
+    opacity: 0;
+}
+.fa_down{
+    opacity: 0;
+}
+.chevron i{
+    position: absolute;
+}
+
+
+.selected__opt_result li:nth-of-type(1){
+    border-right: 1px solid black;
+     padding:0 10px;
+    cursor: pointer;
+}
+.option_container{
+   background-color: purple;
+   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.397);
+   transition: all .4s ease-in;
+   transform-origin: top;
+   width:80%;
+   margin: 0 auto;
+   color: #ccc;
+}
+.option_hidden{
+    transform: scale(0, 0);
+}
+ .open{
+    transform: scale(1, 1);
+    transform-origin:top;
+}
+.option_container ul li{
+    line-height: 2;
+    border-bottom: 1px solid rgba(255, 105, 180, 0.397);
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    padding: 0 10px;
+}
+.option_container ul .active{
+    border: 3px solid red;  
+}
+.option_container ul li:nth-of-type(odd){
+    border-bottom: 1px solid rgb(255, 105, 180);
+}
+.option_container  .dot{
+    border: 2px solid rgba(245, 245, 245, 0.328);;
+    height:20px;
+    border-radius: 50%;
+    width: 20px;
+    margin:10px;
+    display: inline-block;
+}
+
+.option_container ul li:hover{
+    background-color: rgba(255, 105, 180, 0.267);
+}
